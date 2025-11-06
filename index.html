@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRÜ — Hero</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Sticky header -->
+    <header class="site-header">
+        <div class="nav-rail">
+        <!-- 1) Logo: 100x100 white circle with 80x80 logo -->
+        <a href="#hero" class="brand-wrap" aria-label="CRÜ Home">
+            <img src="Images/Logo.png" alt="CRÜ" class="brand-img" />
+        </a>
+
+        <!-- 2) Center pill: 530x100, radius 80 -->
+        <nav class="main-nav nav-pill" aria-label="Primary">
+            <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#how" class="nav-link">How It Works</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#story" class="nav-link">Our Story</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3) Download: white pill 174x100 with transparent outlined button -->
+        <div class="cta-wrap">
+            <a href="#download" class="cta-btn">Download</a>
+        </div>
+
+        <!-- Hamburger (iPad and below) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+        </button>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <nav class="mobile-nav" id="mobileMenu" aria-label="Mobile Primary">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#how" class="mobile-link">How It Works</a>
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#story" class="mobile-link">Our Story</a>
+        <a href="#download" class="mobile-link mobile-cta">Download</a>
+        </nav>
+    </header>
+
+    <!-- Hero with full-bleed video -->
+    <main class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="Images/background.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <section class="hero-content">
+        <h1>Honoring Great Interactions</h1>
+        <p>By redefining how people build genuine friendships, starting with who you are at your core.</p>
+        <a href="#download" class="btn-ring btn-lg">Download</a>
+        </section>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+    <div class="about-wrap">
+        <h2 class="about-title">About CRÜ</h2>
+
+        <div class="about-grid">
+        <!-- Left: visual -->
+        <figure class="about-visual">
+            <!-- Replace the src with your asset path -->
+            <img src="Images/hand.png" alt="Hand holding CRÜ app" />
+        </figure>
+
+        <!-- Right: copy -->
+        <div class="about-copy">
+            <p>
+            Crü is redefining how people build genuine friendships in a world where
+            connection often feels complicated. We’ve all met someone we instantly
+            clicked with—on a plane, at an event, or while traveling—only for that
+            connection to fade the moment we part ways. Sharing a phone number can
+            feel too personal, and giving out an Instagram handle can easily be
+            misinterpreted.
+            </p>
+            <p>
+            Crü bridges that gap. It’s a friendship app designed to make staying
+            connected effortless and comfortable. It begins with a personality-based
+            quiz that helps our algorithm understand who you are at your core—your
+            values, energy, and communication style—so it can suggest people who
+            truly align with you. From there, Crü offers a space where friendships
+            can form naturally, without pressure or blurred boundaries.
+            </p>
+            <p>
+            At its heart, Crü is about bringing authenticity back to human connection—
+            helping people meet others who simply get them, and keeping those
+            meaningful, spontaneous moments alive.
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="how-section">
+        <div class="how-wrap">
+            <h2 class="how-title">How It Works</h2>
+
+            <ol class="how-stack">
+            <!-- Card 1 -->
+            <li class="how-card step-1">
+                <div class="card-inner">
+                <div class="card-copy">
+                    <h3>Take the Personality Quiz</h3>
+                    <p>Answer a few questions about your values and energy to help Cru match you with people who fit you best.</p>
+                </div>
+                <figure class="card-visual">
+                    <img src="Images/Quiz1.png" alt="CRÜ quiz screen" />
+                </figure>
+                </div>
+            </li>
+
+            <!-- Card 2 -->
+            <li class="how-card step-2">
+                <div class="card-inner">
+                <div class="card-copy">
+                    <h3>Get Matched with Your People</h3>
+                    <p>Cru suggests friends who align with your core personality, not just shared interests or location.</p>
+                </div>
+                <figure class="card-visual">
+                    <img src="Images/Jesse.png" alt="CRÜ profile screen" />
+                </figure>
+                </div>
+            </li>
+
+            <!-- Card 3 -->
+            <li class="how-card step-3">
+                <div class="card-inner">
+                <div class="card-copy">
+                    <h3>Connect Comfortably</h3>
+                    <p>Easily stay in touch with new people through Cru—no need to share your number or socials.</p>
+                </div>
+                <figure class="card-visual">
+                    <img src="Images/QR.png" alt="CRÜ QR Screen" />
+                </figure>
+                </div>
+            </li>
+
+            <!-- Card 4 -->
+            <li class="how-card step-4">
+                <div class="card-inner">
+                <div class="card-copy">
+                    <h3>Build Real Friendships</h3>
+                    <p>Cru offers a safe space to connect, plan, and build a circle of people who get you.</p>
+                </div>
+                <figure class="card-visual">
+                    <img src="Images/Chat.png" alt="CRÜ chat screen" />
+                </figure>
+                </div>
+            </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features-section">
+    <div class="features-wrap">
+        <h2 class="features-title">Features</h2>
+
+        <!-- Fixed-height scrolling window -->
+        <div class="features-viewport">
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/pquiz2.png" alt="CRÜ personality quiz screen">
+                </figure>
+                <h3 class="feature-name">Personality Quiz</h3>
+                <p class="feature-copy">
+                    Developed with a neuroscientist, Cru’s quiz identifies your core values
+                    and communication style to match you with truly compatible people.
+                </p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/HeatMap.png" alt="CRÜ compatibility heat map">
+                </figure>
+                <h3 class="feature-name">Compatibility Map</h3>
+                <p class="feature-copy">
+                    Get a visual snapshot of what you share in common. The heat map highlights
+                    key similarities and differences so you can instantly see why a connection
+                    feels right.
+                </p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/Prompt.png" alt="CRÜ interactive prompts">
+                </figure>
+                <h3 class="feature-name">Interactive Prompts</h3>
+                <p class="feature-copy">
+                    Replace static bios with bi-weekly icebreakers that spark natural
+                    conversations and reveal personality through honest, engaging answers.
+                </p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/FIC.png" alt="CRÜ friends in common">
+                </figure>
+                <h3 class="feature-name">Friends in Common</h3>
+                <p class="feature-copy">
+                    Cru shows mutual friends and shared circles to make meeting new people feel
+                    familiar, effortless, and comfortable.
+                </p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/PControl.png" alt="CRÜ privacy controls">
+                </figure>
+                <h3 class="feature-name">Privacy Controls</h3>
+                <p class="feature-copy">
+                    You decide who sees your profile and when you connect. Our privacy settings
+                    keep your experience safe, respectful, and always in your control.
+                </p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="feature-card">
+                <figure class="feature-visual">
+                    <img src="Images/SmartMatching.png" alt="CRÜ smart matching">
+                </figure>
+                <h3 class="feature-name">Smart Matching</h3>
+                <p class="feature-copy">
+                    Cru combines your quiz results, heat map, and preferences to introduce
+                    people genuinely compatible with who you are—not just where you are.
+                </p>
+                </article>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section id="story" class="story-section">
+    <div class="story-wrap">
+        <h2 class="story-title">Our Story</h2>
+
+        <div class="story-grid">
+        <!-- Copy -->
+        <div class="story-copy">
+            <p>CRÜ was born from a simple truth: the hardest part about meeting people 
+                today isn’t finding them—it’s forming something real once you do.</p>
+
+            <p>We created CRÜ to make genuine connection feel possible again. The idea 
+                came from countless moments of realizing how rare it is to meet someone 
+                who simply gets you—and how easily those moments can slip away. We 
+                wanted to change that, to make meaningful connections less dependent 
+                on luck and more accessible to everyone.</p>
+
+            <p>Our vision is to bring authenticity back to the way people meet and form 
+                friendships. Starting at the University of Miami and growing across 
+                campuses and cities worldwide, CRÜ aims to build a platform that helps 
+                a world of eight billion people feel just a little more connected.</p>
+        </div>
+
+        <!-- Video (portrait) -->
+        <figure class="story-media">
+            <!-- Replace src and poster paths with your files -->
+            <video
+            class="story-video"
+            src="Images/CRU.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            ></video>
+        </figure>
+        </div>
+    </div>
+    </section>
+
+    <!-- DOWNLOAD / COUNTDOWN -->
+    <section id="download" class="countdown-section" aria-labelledby="go-live-title">
+    <div class="countdown-wrap">
+        <h2 id="go-live-title" class="countdown-title">We Go Live In…</h2>
+
+        <div class="countdown-grid" aria-live="polite">
+        <!-- Days -->
+        <div class="cd-item">
+            <div class="cd-number cd-days" data-unit="days">00</div>
+            <div class="cd-label cd-days">Days</div>
+        </div>
+
+        <!-- Hours -->
+        <div class="cd-item">
+            <div class="cd-number cd-hours" data-unit="hours">00</div>
+            <div class="cd-label cd-hours">Hours</div>
+        </div>
+
+        <!-- Minutes -->
+        <div class="cd-item">
+            <div class="cd-number cd-mins" data-unit="minutes">00</div>
+            <div class="cd-label cd-mins">Minutes</div>
+        </div>
+
+        <!-- Seconds -->
+        <div class="cd-item">
+            <div class="cd-number cd-secs" data-unit="seconds">00</div>
+            <div class="cd-label cd-secs">Seconds</div>
+        </div>
+        </div>
+
+        <p class="countdown-done" hidden>We’re live! 🎉</p>
+    </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer" id="footer">
+    <div class="footer-wrap">
+        <!-- Brand / Nav -->
+        <section class="foot-col">
+        <h4 class="foot-heading">Crü</h4>
+        <nav class="foot-nav">
+            <a href="#about">About</a>
+            <a href="#how">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#story">Our Story</a>
+            <a href="#download">Download</a>
+        </nav>
+        </section>
+
+        <!-- Contact -->
+        <section class="foot-col">
+        <h4 class="foot-heading">Contact Us</h4>
+        <ul class="foot-list">
+            <li class="foot-line">
+            <a href="mailto:thecruproject@gmail.com">thecruproject@gmail.com</a>
+            </li>
+            <li class="foot-line">
+            <a href="tel:+13051234567">(305) 123 4567</a>
+            </li>
+        </ul>
+        </section>
+
+        <!-- Social -->
+        <section class="foot-col">
+        <h4 class="foot-heading">Follow Us</h4>
+        <nav class="foot-nav">
+            <a href="#" rel="nofollow">Instagram</a>
+            <a href="#" rel="nofollow">LinkedIn</a>
+            <a href="#" rel="nofollow">X</a>
+        </nav>
+        </section>
+
+        <!-- Mailing list -->
+        <section class="foot-col foot-news">
+        <h4 class="foot-heading">Join Our Mailing List</h4>
+        <p class="foot-sub">Join our mailing list to receive the latest updates!</p>
+        <form class="foot-form" action="#" method="post" onsubmit="return false">
+            <input type="email" class="foot-input" placeholder="Email Address" aria-label="Email Address" required>
+            <button class="btn-outline-gradient" type="submit">Sign Up</button>
+        </form>
+        </section>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
