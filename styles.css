@@ -796,12 +796,18 @@ h1{ font-family:"Outfit", sans-serif; }
     font-weight: 500;
     color: var(--foot-fg);
     cursor: pointer;
+    display:flex;
     background:
         linear-gradient(#0c0c0c, #0c0c0c) padding-box,
         var(--grad) border-box;
     border: 1.5px solid transparent;
     transition: transform .12s ease, opacity .2s ease;
+    align-items:center; 
+    justify-content:center; 
+    justify-self:start;
+    text-decoration:none;
 }
+
 .btn-outline-gradient:hover{ transform: translateY(-1px); }
 .btn-outline-gradient:active{ transform: translateY(0); }
 
